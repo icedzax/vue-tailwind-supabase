@@ -1,15 +1,11 @@
-import { createApp } from 'vue'
-import './tailwind.css'
-import App from './App.vue'
-import { routes } from './routes.js'
-import { createRouter, createWebHistory } from 'vue-router'
+import { createApp } from "vue";
+import "./tailwind.css";
+import App from "./App.vue";
+import router from "./router";
 
-const app = createApp(App)
+// import "@/assets/main.pcss";
 
-const router = createRouter({
-  history: createWebHistory(),
-  routes,
-})
+const app = createApp(App);
 
-app.use(router)
-app.mount('#app')
+app.use(router);
+app.mount("#app");
